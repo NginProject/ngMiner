@@ -72,12 +72,12 @@ static void cryptonight_av2_aesni_double(const uint8_t *input, size_t size, uint
 
 
 static void cryptonight_av3_softaes(const uint8_t *input, size_t size, uint8_t *output, cryptonight_ctx *ctx, int variant) {
-    CRYPTONIGHT_HASH(single, AEON_ITER, AEON_MEMORY, MONERO_MASK, true)
+    CRYPTONIGHT_HASH(single, AEON_ITER, AEON_MEMORY, AEON_MASK, true)
 }
 
 
 static void cryptonight_av4_softaes_double(const uint8_t *input, size_t size, uint8_t *output, cryptonight_ctx *ctx, int variant) {
-    CRYPTONIGHT_HASH(double, AEON_ITER, AEON_MEMORY, MONERO_MASK, true)
+    CRYPTONIGHT_HASH(double, AEON_ITER, AEON_MEMORY, AEON_MASK, true)
 }
 
 
